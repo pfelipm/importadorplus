@@ -34,9 +34,13 @@ Probablemente estarás pensando en que para hacer algo parecido ya existe la fun
     + **Con éxito**: Muestra la fecha y hora de la última ejecución correcta de cada trabajo de importación. Un color de fondo rojo indica que la última ejecución ha fallado, pero el sello de tiempo seguirá mostrando el momento de la última ejecución con éxito como referencia de la *frescura* de los datos en la hoja de cálculo.
     + **Registro última ejecución**: En el caso de una ejecución fallida, aquí podrás revisar el mensaje de error correspondiente que quizás te ayude a diagnosticar el problema.
 
+![Selección_999(137)](https://user-images.githubusercontent.com/12829262/71700156-4d7afd80-2dc3-11ea-9b1d-924602a45e29.png)
+
 Puedes hacerte una copia de esta [plantilla](https://docs.google.com/spreadsheets/d/1AReLiyOuTEXLkWCFhJE3nnSC-P2KvMMODYFI1weeKT0/template/preview) con dos trabajos predefinidos para jugar con ella y hacerte una idea mejor de su funcionamiento.
 
-# Algunos detalles a tener en cuenta
+# Algunas consideraciones
+
+
 
 
 
