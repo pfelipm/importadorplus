@@ -1,11 +1,16 @@
 # ¿Qué es Importador+?
 
-**Importador+** es la modesta evolución de un pequeño script GAS creado a modo de ejemplo didáctico para el bloque de *Gestión Digital Eficaz* que impartí el pasado mes de octubre dentro del [Pograma TIE](https://u-teach.co/tie) de Uteach. Se trata de una plantilla de hoja de cálculo de Google potenciada mediante Apps Script que permite automatizar e incluso programar, usando activadores (*triggers*) establecidos manualmente, el intercambio de datos con otras hojas de cálculo. Puede utilizarse, por tanto, para consolidar información dispersa.
+**Importador+** es la modesta evolución de un pequeño script GAS creado a modo de ejemplo didáctico para el bloque de *Gestión Digital Eficaz* que impartí el pasado mes de octubre dentro del [Pograma TIE](https://u-teach.co/tie) de Uteach. Se trata de una plantilla de hoja de cálculo de Google potenciada mediante Apps Script que permite consolidar información dispersa en distintas hojas de cálculo.
 
-Probablemente estarás pensando que para hacer algo parecido ya existe la función integrada `=IMPORTRANGE(URL; Rango)`. Y tendrás razón. No obstante, `IMPORTRANGE` presenta dos particularidades:
+Probablemente estarás pensando en que para hacer algo parecido ya existe la función integrada `=IMPORTRANGE(URL; Rango)`. Y tendrás razón. No obstante, `IMPORTRANGE` presenta algunas particularidades:
 
-+ No importa el formato de las celdas.
++ No importa el formato de las celdas, solo sus valores numéricos o de texto.
 + No importa las fórmulas, sino el resultado de su evaluación en el momento de la adquisición.
++ La conexión con las hojas de datos de las que se adquiere información debe ser autorizada previamente.
++ El intercambio de información es unidireccional, a menos que se combinen diversas funciones `IMPORTRANGE`, lo que puede llevar a bonitas paradojas circulares.
++ Los datos se actualizan automáticamente y prácticamente en tiempo real, a todos los efectos los rangos de datos de origen y destino están vinculados.
+
+¿Quiero esto decir que **Importador+** es preferible a `IMPORTRANGE`? En absoluto. Simplemenente, funciona de un modo diferente que puede resultar ventajoso en determinadas circunstancias.
 
 # ¿Cómo funciona?
 
@@ -15,7 +20,7 @@ Probablemente estarás pensando que para hacer algo parecido ya existe la funci�
     + **Origen / ID o URL**: URL (tal y como aparece en el navegador, incluyendo el prefijo `https://`) de la hoja de cálculo donde se encuentran los datos o, alternativamente, simplemente su ID alfanumérico (ejemplo: `https://docs.google.com/spreadsheets/d/17BFKqz0SUdHrGK-Wg78kugcyUDN6PAthbh3tGUPYj0w/edit#gid=0` o `17BFKqz0SUdHrGK-Wg78kugcyUDN6PAthbh3tGUPYj0w`).
     + **Origen / Hoja**: Nombre de la hoja de datos (pestaña) donde se encuentran los datos a importar (ejemplo `Hoja 1`).
     + **Origen / Rango**: Rango de datos objetivo, se admiten rangos infinitos (ejemplo `A2:E`).
-    + **Destino / Hoja**: Nombre de la hoja, dentro de la HdC de Importador+, donde se depositarán los datos importados (ejemplo `Hoja 1`).
+    + **Destino / Hoja**: Nombre de la hoja, dentro de la HdC de **Importador+**, donde se depositarán los datos importados (ejemplo `Hoja 1`).
     + **Destino / Rango**: Celda superior izquierda de rango en la hoja destino donde se copiarán los valores procedentes de la hoja origen (ejemplo `A1`).
     + **Opciones de copia**: Estas casillas de verificación permiten escoger selectivamente qué elementos del rango de origen, además del propio contenido de las celdas, serán copiados:
       + **Formato**: Fuente, tamaño, estilo, colores de texto y fondo, bordes, alineación horizontal y vertical, rotación, ajuste de texto, formato de número, combinaciones de celdas, formato condicional, colores alternos e incluso texto enriquecido (celdas con distintos atributos en diferentes partes del texto que contienen).
