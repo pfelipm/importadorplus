@@ -37,7 +37,9 @@ Probablemente estarás pensando en que para hacer algo parecido ya existe la fun
     + **Con éxito**: Muestra la fecha y hora de la última ejecución correcta de cada trabajo de importación. Un color de fondo rojo indica que la última ejecución ha fallado, pero el sello de tiempo seguirá mostrando el momento de la última ejecución con éxito como referencia de la *frescura* de los datos en la hoja de cálculo.
     + **Registro última ejecución**: En el caso de una ejecución fallida, aquí podrás revisar el mensaje de error correspondiente que quizás te ayude a diagnosticar el problema.
 
-Puedes hacerte una copia de esta [plantilla](https://docs.google.com/spreadsheets/d/1AReLiyOuTEXLkWCFhJE3nnSC-P2KvMMODYFI1weeKT0/template/preview) con dos trabajos predefinidos para jugar con ella y hacerte una idea mejor de su funcionamiento.
+Puedes hacerte una copia de esta [plantilla](https://docs.google.com/spreadsheets/d/1AReLiyOuTEXLkWCFhJE3nnSC-P2KvMMODYFI1weeKT0/template/preview), que ya incluye dos trabajos predefinidos para jugar con ella y hacerte una idea mejor de su funcionamiento.
+
+![Importador++ - plantilla - Hojas de cálculo de Google - Google Chrome_999(001)](https://user-images.githubusercontent.com/12829262/71700313-f0337c00-2dc3-11ea-83ef-f68e19dba69e.png)
 
 # Algunas consideraciones
 
