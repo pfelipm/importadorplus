@@ -20,10 +20,14 @@ Importador+ es la modesta evolución de un pequeño script GAS creado a modo de 
     + **Destino / Rango**: Celda superior izquierda de rango en la hoja destino donde se copiarán los valores procedentes de la hoja origen (ejemplo `A1`).
     + **Opciones de copia**: Estas casillas de verificación permiten escoger selectivamente qué elementos del rango de origen, además del propio contenido de las celdas, serán copiados:
       + **Formato**: Fuente, tamaño, estilo, colores de texto y fondo, bordes, alineación horizontal y vertical, rotación, ajuste de texto, formato de número, combinaciones de celdas, formato condicional, colores alternos e incluso texto enriquecido (celdas con distintos atributos en diferentes partes del texto que contienen).
-      + **Fórmulas**: Si se activa, copia la fórmula en lugar del resultado de su evaluación en la hoja de origen.
+      + **Fórmulas**: Si se activa, copia las fórmulasen lugar del resultado de su evaluación en la hoja de origen.
       + **Anchura**: Ancho de columnas.
       + **Altura**: Alto de filas.
       + **Notas**: Notas insertadas en las celdas.
+1. Asegúrate de marcar la casilla de verificación en la columnar `Activar` para que el trabajo de importación sea procesado.
+1. Utiliza los comandos del menú `🔄 Importador+` para **importar** (recibir datos de las HdC origen) o **exportar** (empujar datos desde la plantilla a sus HdC originales).
+
+# Algunos detalles a tener en cuenta
 
 
 
