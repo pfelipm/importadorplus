@@ -17,7 +17,13 @@ Importador+ es la modesta evolución de un pequeño script GAS creado a modo de 
     + **Origen :arrow_right: Hoja**: Nombre de la hoja de datos (pestaña) donde se encuentran los datos a importar (ejemplo `Hoja 1`).
     + **Origen :arrow_right: Rango**: Rango de datos objetivo, se admiten rangos infinitos (ejemplo `A2:E`).
     + **Destino :arrow_right: Hoja**: Nombre de la hoja, dentro de la HdC de Importador+, donde se depositarán los datos importados (ejemplo `Hoja 1`).
-    + **Destion :arrow_right: Rango**: Celda superior izquierda de rango en la hoja destino donde se copiarán los valores procedentes de la hoja origen (ejemplo `A1`).
+    + **Destino :arrow_right: Rango**: Celda superior izquierda de rango en la hoja destino donde se copiarán los valores procedentes de la hoja origen (ejemplo `A1`).
+    + **Opciones de copia**: Permite escoger selectivamente qué elementos del rango de origen, además del propio contenidod e las celdas, serán copiados:
+      + **Formato**: Fuente, tamaño, estilo, color de texto y fondo, bordes, alineación horizontal y vertical, rotación, ajuste de texto, formato de número, combinaciones de celdas, formato condicional, colores alternos e incluso texto enriquecido (celdas con distintos atributos en diferentes partes del texto).
+      + **Fórmulas**: Si se activa, copia la fórmula en lugar del resultado de su evaluación en la hoja de origen.
+      + **Anchura**: Ancho de columnas.
+      + **Altura**: Alto de filas.
+      + **Notas**: Notas insertadas en las celdas.
 
 
 
