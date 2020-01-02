@@ -30,6 +30,9 @@ Probablemente estarás pensando en que para hacer algo parecido ya existe la fun
       + **Notas**: Notas insertadas en las celdas.
 1. Asegúrate de marcar la casilla de verificación en la columna `Activar` para que el trabajo de importación sea procesado.
 1. Utiliza los comandos del menú `🔄 Importador+` para **importar** (recibir datos de las HdC origen) o **exportar** (empujar datos desde la plantilla a sus HdC originales).
+1. Las columnas L y M se actualizan tras cada ejecución de los trabajos programados.
+    + **Con éxito**: Muestra la fecha y hora de la última ejecución correcta de cada trabajo de importación. Un color de fondo rojo indica que la última ejecución ha fallado, pero el sello de tiempo seguirá mostrando el momento de la última ejecución con éxito como referencia de la *frescura* de los datos en la hoja de cálculo.
+    + **Registro última ejecución**: En el caso de una ejecución fallida, aquí podrás revisar el mensaje de error correspondiente que quizás te ayude a diagnosticar el problema.
 
 Puedes hacerte una copia de esta [plantilla](https://docs.google.com/spreadsheets/d/1AReLiyOuTEXLkWCFhJE3nnSC-P2KvMMODYFI1weeKT0/template/preview) con dos trabajos predefinidos para jugar con ella y hacerte una idea mejor de su funcionamiento.
 
