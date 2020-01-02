@@ -15,7 +15,7 @@ Probablemente estarás pensando en que para hacer algo parecido ya existe la fun
 # ¿Cómo funciona?
 
 1. Obtén una copia de la plantilla de **Importador+** haciendo clic [aquí](https://docs.google.com/spreadsheets/d/18EQAHxf-pvijBnzjpy3M4Q_WDkFvsoO54tns5gO51yM/template/preview) y a continuación en `Utilizar plantilla`.
-![Selección_999(137)](https://user-images.githubusercontent.com/12829262/71700156-4d7afd80-2dc3-11ea-9b1d-924602a45e29.png)
+![Importador++ - plantilla - Hojas de cálculo de Google - Google Chrome_999](https://user-images.githubusercontent.com/12829262/71700231-96cb4d00-2dc3-11ea-8b45-ac6e52fdc83d.png)
 1. Dirígete a la hoja denominada `🔄 Importar+`.
 1. Cada fila representa un *trabajo* de importación, añade tantas como necesites.
     + **Origen / ID o URL**: URL (tal y como aparece en el navegador, incluyendo el prefijo `https://`) de la hoja de cálculo donde se encuentran los datos o, alternativamente, su ID alfanumérico (ejemplo: `https://docs.google.com/spreadsheets/d/17BFKqz0SUdHrGK-Wg78kugcyUDN6PAthbh3tGUPYj0w/edit#gid=0` o `17BFKqz0SUdHrGK-Wg78kugcyUDN6PAthbh3tGUPYj0w`).
