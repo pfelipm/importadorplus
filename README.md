@@ -12,8 +12,9 @@ Importador+ es la modesta evolución de un pequeño script GAS creado a modo de 
 
 1. Obtén una copia de la plantilla haciendo clic [aquí](https://docs.google.com/spreadsheets/d/18EQAHxf-pvijBnzjpy3M4Q_WDkFvsoO54tns5gO51yM/template/preview) y a continuación en `Utilizar plantilla`.
 1. Dirígete a la hoja denominada `🔄 Importar+`.
-1. Cada fila representa un *trabajo* de importación. Solo tienes que indicar:
-  + dddd
+1. Cada fila representa un *trabajo* de importación, añade tantas como necesites.
+    + **ID o URL**: URL (incluyendo el prefijo https://) de la hoja de cálculo donde se encuentran los datos o, alternativamente, simplemente su ID alfanumérico (ejemplo: `https://docs.google.com/spreadsheets/d/17BFKqz0SUdHrGK-Wg78kugcyUDN6PAthbh3tGUPYj0w` o `17BFKqz0SUdHrGK-Wg78kugcyUDN6PAthbh3tGUPYj0w`).
+    + 
 
 
 
