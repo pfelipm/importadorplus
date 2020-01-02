@@ -11,7 +11,7 @@
  
  Empuja los datos en los rangos de la HdC actual a sus HdC y rangos de origen.
  
- Si se desea ejecutar de manera programada en intervalos periódicos:
+ Si se desea ejecutar de manera programada a intervalos periódicos:
  
  1. Herramientas > Editor de secuencia de comandos.
  2. Editar > Activadores del proyecto activo.
@@ -22,17 +22,17 @@
  7. Selecciona el intervalo de minutos: a gusto del usuario.
  8. Guardar.
  
- Se pueden crear diferentes activadores temporales con distintas frecuencias
+ Se pueden crear diferentes activadores temporales con distintas frecuencias.
  
  NOTAS:
-   - Range >> copyTo / copyFormatToRange requieren que origen y destino se encuentren en la misma hdc
+   - Range >> copyTo / copyFormatToRange requieren que origen y destino se encuentren en la misma HdC.
    - Se usa CopyTo con opciones de copia dado que (a) solo se puede leer información de bordes con la API
      avanzada (cuotas) y (b) no es posible discriminar en un rango celdas con números o texto para aplicar
-     formato numérico o enriquecido de manera individual (sin leer y escribir celda a celda, que es muy lento
-   - Cuidado con rangos extensos / infinitos al copiar tamaño filas / columnas, puede tardar
-   - El ajuste de tamaño fil / col solo tiene efecto si se ha modificado manualmente en rango origen
+     formato numérico o enriquecido de manera individual (sin leer y escribir celda a celda, que es muy lento.
+   - Cuidado con rangos extensos / infinitos al copiar tamaño filas / columnas, puede tardar.
+   - El ajuste de tamaño fil / col solo tiene efecto si se ha modificado manualmente en rango origen.
    - Los ajustes de texto enriquecido intra-celda solo se aplican al copiar cuando se leccionan formato, fórmulas y notas
-     (mediante un "apaño", ver comentarios más abajo, esta restricción se limita únicamente a formato y fórmulas)
+     (mediante un "apaño", ver comentarios más abajo, esta restricción se limita únicamente a formato y fórmulas).
   
   Versión 1.0 (enero 2020) · Copyright (C) 2020 Pablo Felip (@pfelipm) · Se distribuye bajo licencia GNU GPL v3.
 */
