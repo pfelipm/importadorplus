@@ -5,4 +5,5 @@ Script GAS para automatizar la importación y exportación de datos desde distin
 
 
 
-Copyright (C) 2020 Pablo Felip Monferrer (<a href="https://twitter.com/pfelipm">@pfelipm</a>). Importador+ se distribuye bajo licencia GNU GPL v3.
+Copyright (C) 2020 Pablo Felip Monferrer (<a href="https://twitter.com/pfelipm">@pfelipm</a>).
+Se distribuye bajo licencia GNU GPL v3.
