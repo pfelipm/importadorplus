@@ -1,7 +1,7 @@
 # Importador+
 **Importador+** es una plantilla de hoja de cálculo de Google potenciada mediante Apps Script que permite automatizar e incluso programar, usando activadores (*triggers*) establecidos manualmente, el intercambio de datos con otras hojas de cálculo.
 
-Sí, para eso ya existe la función integrada <tt>IMPORTRANGE</tt>, estarás probablemente pensado. Y tienes razón. No obstante, esta función presenta dos particularidades:
+Sí, para eso ya algo así la función integrada `IMPORTRANGE`, estarás probablemente pensado. Y tienes razón. No obstante, esta función presenta dos particularidades:
 1. No importa el formato de las celdas.
 1. No importa las fórmulas, sino el resultado de su evaluación en el momento de la adquisición.
 
