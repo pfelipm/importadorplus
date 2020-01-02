@@ -1,12 +1,11 @@
-# Importador+
-**Importador+** es una plantilla de hoja de cálculo de Google potenciada mediante Apps Script que permite automatizar e incluso programar, usando activadores (*triggers*) establecidos manualmente, el intercambio de datos con otras hojas de cálculo.
+# ¿Qué es Importador+?
 
-Sí, para eso ya existe así la función integrada `=IMPORTRANGE(URL; Rango)`, estarás probablemente pensado. Y tendrás razón. No obstante, esta función presenta dos particularidades:
+**Importador+** es la modesta evolución de un pequeño script GAS creado a modo de ejemplo didáctico para el bloque de *Gestión Digital Eficaz* que impartí el pasado mes de octubre dentro del [Pograma TIE](https://u-teach.co/tie) de Uteach. Se trata de una plantilla de hoja de cálculo de Google potenciada mediante Apps Script que permite automatizar e incluso programar, usando activadores (*triggers*) establecidos manualmente, el intercambio de datos con otras hojas de cálculo. Puede utilizarse, por tanto, para consolidar información dispersa.
+
+Probablemente estarás pensando que para hacer algo parecido ya existe la función integrada `=IMPORTRANGE(URL; Rango)`. Y tendrás razón. No obstante, `IMPORTRANGE` presenta dos particularidades:
 
 + No importa el formato de las celdas.
 + No importa las fórmulas, sino el resultado de su evaluación en el momento de la adquisición.
-
-Importador+ es la modesta evolución de un pequeño script GAS creado a modo de ejemplo didáctico para el bloque de *Gestión Digital Eficaz* que impartí el pasado mes de octubre dentro del [Pograma TIE](https://u-teach.co/tie) de Uteach.
 
 # ¿Cómo funciona?
 
