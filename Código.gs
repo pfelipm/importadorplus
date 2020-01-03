@@ -31,7 +31,7 @@
      formato numérico o enriquecido de manera individual (sin leer y escribir celda a celda, que es muy lento.
    - Cuidado con rangos extensos / infinitos al copiar tamaño filas / columnas, puede tardar.
    - El ajuste de tamaño fil / col solo tiene efecto si se ha modificado manualmente en rango origen.
-   - Los ajustes de texto enriquecido intra-celda solo se aplican al copiar cuando se leccionan formato, fórmulas y notas
+   - Los ajustes de texto enriquecido intra-celda solo se aplican al copiar cuando se seleccionan formato, fórmulas y notas
      (mediante un "apaño", ver comentarios más abajo, esta restricción se limita únicamente a formato y fórmulas).
   
   Versión 1.0 (enero 2020) · Copyright (C) 2020 Pablo Felip (@pfelipm) · Se distribuye bajo licencia GNU GPL v3.
@@ -349,7 +349,7 @@ function procesar(modo) {
       SpreadsheetApp.getActiveSpreadsheet().getSheetByName(HOJA_IMPORTAR)
                                            .getRange(filaTrabajo + FIL_TRABAJOS, COL_FECHA)
                                            .setNumberFormat('dd/mm/yy HH:mm')
-                                           .setBackground('57bb8a')
+                                           .setBackground('#57bb8a')
                                            .setFontColor('White');
     }
     else {
