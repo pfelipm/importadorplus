@@ -27,7 +27,7 @@ Probablemente estarás pensando en que para hacer algo parecido ya existe la fun
     + **Destino / Rango**: Celda superior izquierda del rango en la hoja destino donde se copiarán los valores procedentes de la hoja de cálculo origen (ejemplo `A1`).
     + **Opciones de copia**: Estas casillas de verificación permiten escoger selectivamente qué elementos del rango de origen, además del propio contenido de las celdas, serán copiados. Solo aparecerán en cada fila cuando la celda correspondiente en la columna **ID / URL** deje de estar vacía.
       + **Formato**: Fuente, tamaño, estilo, colores de texto y fondo, bordes, alineación horizontal y vertical, rotación, ajuste de texto, formato de número, combinaciones de celdas, formato condicional, colores alternos e incluso texto enriquecido (celdas con distintos atributos en diferentes partes del texto que contienen).
-      + **Fórmulas**: Si se activa, copia las fórmulasen lugar del resultado de su evaluación en la hoja de origen.
+      + **Fórmulas**: Si se activa, copia las fórmulas tal cual en lugar del resultado de su evaluación en la hoja de origen.
       + **Anchura**: Ancho de columnas.
       + **Altura**: Alto de filas.
       + **Notas**: Notas insertadas en las celdas.
@@ -68,6 +68,7 @@ Puedes crear varios activadores, asociados a los procesos de importación y expo
 Cosas que debes tener en cuenta:
 
 + A diferencia de lo que ocurre con `IMPORTRANGE`, los datos contenidos en los rangos de origen y destino son aquí totalmente independientes y pueden modificarse de manera aislada. Solo se sincronizan cuando se realizan con éxito operaciones de importación o exportación, manuales o programadas.
++ El usuario que ejecuta manualmente la importación / exportación (o crea un activador) debe tener los permisos de acceso necesarios sobre las hojas de cálculo de las que se obtienen (lectura) / hacia las que se empujan (edición) datos.
 + Si utilizas rangos de datos muy grandes es posible que el proceso de importación / exportación se demore bastante si se activan las opciones de ajustar el tamaño de filas y columnas.
 + Hablando de filas y columnas, sus tamaños solo se aplican en el rango destino cuando en el de origen se han modificado los valores por defecto. Por otro lado, dado que los trabajos se procesan secuencialmente, es posible que se produzcan interferencias si los rangos respectivos comparten filas o columnas.
 + El formato de texto enriquecido intra-celda solo se copia cuando se seleccionan simultaneamente y al menos las opciones de propagación de *formato* y *fórmulas*. Esto es debido a una cuestión técnica un tanto rebuscada relacionada con la API de hojas de cálculo que por el momento no he sido capaz de resolver de modo totalmente satisfactorio. Quizás un día de estos me anime a contarlo...
