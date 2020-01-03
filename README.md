@@ -65,5 +65,5 @@ Puedes crear varios activadores, asociados a los procesos de importación y expo
 
 # Algunas consideraciones
 
-<hr>
+
 Copyright (C) 2020 Pablo Felip Monferrer ([@pfelipm](https://twitter.com/pfelipm)). Se distribuye bajo licencia GNU GPL v3.
