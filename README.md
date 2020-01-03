@@ -52,7 +52,9 @@ La ejecución de los trabajos de importación o exportación de datos es manual,
 1. Selecciona la fuente del evento: `Según tiempo`.
 1. Selecciona el tipo de activador basado en hora: *a gusto del usuario*.
 1. Selecciona el intervalo de minutos: *a gusto del usuario.*
-1. Guardar.
+1. `Guardar`.
+
+![Selección_999(138)](https://user-images.githubusercontent.com/12829262/71700637-700e1600-2dc5-11ea-9c03-9dfb756cf181.png)
 
 
 
