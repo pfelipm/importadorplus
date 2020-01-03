@@ -25,7 +25,7 @@ Probablemente estarás pensando en que para hacer algo parecido ya existe la fun
     + **Origen / Rango**: Rango de datos objetivo, se admiten rangos infinitos (ejemplo `A2:E`).
     + **Destino / Hoja**: Nombre de la hoja, siemppre dentro de la HdC de **Importador++**, donde se depositarán los datos importados (ejemplo `Hoja 1`).
     + **Destino / Rango**: Celda superior izquierda del rango en la hoja destino donde se copiarán los valores procedentes de la hoja de cálculo origen (ejemplo `A1`).
-    + **Opciones de copia**: Estas casillas de verificación permiten escoger selectivamente qué elementos del rango de origen, además del propio contenido de las celdas, serán copiados:
+    + **Opciones de copia**: Estas casillas de verificación permiten escoger selectivamente qué elementos del rango de origen, además del propio contenido de las celdas, serán copiados. Solo aparecerán en la fila correspondiente cuando la columna ID / URL no esté vacía.
       + **Formato**: Fuente, tamaño, estilo, colores de texto y fondo, bordes, alineación horizontal y vertical, rotación, ajuste de texto, formato de número, combinaciones de celdas, formato condicional, colores alternos e incluso texto enriquecido (celdas con distintos atributos en diferentes partes del texto que contienen).
       + **Fórmulas**: Si se activa, copia las fórmulasen lugar del resultado de su evaluación en la hoja de origen.
       + **Anchura**: Ancho de columnas.
