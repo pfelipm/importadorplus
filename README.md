@@ -58,8 +58,7 @@ La ejecución de los trabajos de importación o exportación de datos es manual,
 
 Puedes crear varios activadores, asociados a los procesos de importación y exportación y / o con diversas periodicidades. Si deseas eliminar un activador, solo tienes que seguir los pasos 1 - 2 y utilizar el menú contextual para deshacerte del que te moleste.
 
-![Selección_999(139)](https://user-images.githubusercontent.com/12829262/71700679-a3e93b80-2dc5-11ea-992b-da581e2c7fff.png)
-
+![Selección_999(139)](https://user-images.githubusercontent.com/12829262/71700824-4f928b80-2dc6-11ea-986a-dff34e3452c8.png)
 
 
 
