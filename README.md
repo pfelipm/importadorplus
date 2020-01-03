@@ -34,7 +34,7 @@ Probablemente estarás pensando en que para hacer algo parecido ya existe la fun
 1. Asegúrate de marcar la casilla de verificación en la columna `Activar` para que el trabajo de importación sea procesado.
 1. Utiliza los comandos del menú `🔄 Importador+` para **importar** (recibir datos de las HdC origen) o **exportar** (empujar datos desde la plantilla a sus HdC originales).
 1. Las columnas L y M se actualizan tras cada ejecución de los trabajos programados.
-    + **Con éxito**: Muestra la fecha y hora de la última ejecución correcta de cada trabajo de importación. Un color de fondo rojo indica que la última ejecución ha fallado, pero el sello de tiempo seguirá mostrando el momento de la última ejecución con éxito como referencia de la *frescura* de los datos en la hoja de cálculo.
+    + **Con éxito**: Muestra la fecha y hora de la última ejecución correcta de cada trabajo de importación. Un color de fondo rojo indica que la última ejecución ha fallado, pero el sello de tiempo seguirá mostrando el momento de la última ejecución con éxito como evidencia de la *frescura* de los datos en la hoja de cálculo.
     + **Registro última ejecución**: En el caso de una ejecución fallida, aquí podrás revisar el mensaje de error correspondiente que quizás te ayude a diagnosticar el problema.
 
 Puedes hacerte una copia de esta [plantilla](https://docs.google.com/spreadsheets/d/1AReLiyOuTEXLkWCFhJE3nnSC-P2KvMMODYFI1weeKT0/template/preview), que ya incluye dos trabajos predefinidos, para jugar con ella y hacerte una idea mejor de su funcionamiento.
@@ -43,7 +43,7 @@ Puedes hacerte una copia de esta [plantilla](https://docs.google.com/spreadsheet
 
 # Programando los trabajos
 
-La ejecución de los trabajos de importación o exportación de datos es manual, aunque puede programarse fácilmente gracias a los *activadores por tiempo* que nos ofrece el editor de Google Apps Script. Veamos cómo:
+La ejecución de los trabajos de importación o exportación de datos es manual, aunque puede programarse fácilmente gracias a los *activadores por tiempo* que nos ofrece el editor de Google Apps Script. Estos activadores permiten desencadenar procesos de consolidación o actualización de datos a intervalos regulares, por ejemplo diarios. Veamos cómo:
 
 1. Abre la hoja de cálculo de **Importador++**.
 1. Menú `Herramientas` :arrow_right: `Editor de secuencia de comandos`.
@@ -65,6 +65,12 @@ Puedes crear varios activadores, asociados a los procesos de importación y expo
 
 # Algunas consideraciones
 
+Cosas que debes tener en cuenta:
+
++ A diferencia de lo que ocurre con `IMPORTRANGE`, los datos contenidos en los rangos de origen y destino son aquí totalmente independientes y pueden modificarse sin interferencias de ningún tipo. Solo se sincronizan cuando se realizan con éxito operaciones de importación o exportación, manuales o programadas.
++ Si utilizas rangos de datos muy grandes es posible que el proceso de importación / exportación se demore bastante si se activan las opciones de ajustar el tamaño de filas y columnas.
++ Hablando de filas y columnas, sus tamaños solo se aplican en el rango destino cuando en el de origen se han modificado los valores por defecto.
++ El formato de texto enriquecido intra-celda solo se copia cuando se seleccionan simultaneamente y al menos las opciones de propagación de *formato* y *fórmulas*. Esto es debido a una cuestión técnica un tanto rebuscada relacionada con la API de hojas de cálculo que por el momento no he sido capaz de resolver de modo totalmente satisfactorio. Quizás un día de estos me anime a contarlo...
 
 # Licencia
 
