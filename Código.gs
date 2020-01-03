@@ -349,7 +349,7 @@ function procesar(modo) {
       SpreadsheetApp.getActiveSpreadsheet().getSheetByName(HOJA_IMPORTAR)
                                            .getRange(filaTrabajo + FIL_TRABAJOS, COL_FECHA)
                                            .setNumberFormat('dd/mm/yy HH:mm')
-                                           .setBackground('Green')
+                                           .setBackground('57bb8a')
                                            .setFontColor('White');
     }
     else {
@@ -360,7 +360,7 @@ function procesar(modo) {
       SpreadsheetApp.getActiveSpreadsheet().getSheetByName(HOJA_IMPORTAR).getRange(filaTrabajo + FIL_TRABAJOS, COL_ERROR).setValue(resultado);
       SpreadsheetApp.getActiveSpreadsheet().getSheetByName(HOJA_IMPORTAR)
                                            .getRange(filaTrabajo + FIL_TRABAJOS, COL_FECHA)
-                                           .setBackground('Red')
+                                           .setBackground('#ea4335')
                                            .setFontColor('White');
     }
   }
