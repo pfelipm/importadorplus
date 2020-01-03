@@ -26,26 +26,26 @@ Probablemente estarás pensando en que para hacer algo parecido ya existe la fun
     + **Origen / Hoja**: Nombre de la hoja de datos (pestaña) donde se encuentran los datos a importar (ejemplo `Hoja 1`).
     + **Origen / Rango**: Rango de datos objetivo, se admiten rangos infinitos (ejemplo `A2:E`).
     + **Destino / Hoja**: Nombre de la hoja, siemppre dentro de la HdC de **Importador++**, donde se depositarán los datos importados (ejemplo `Hoja 1`).
-    + **Destino / Rango**: Celda superior izquierda del rango en la hoja destino donde se copiarán los valores procedentes de la hoja de cálculo origen (ejemplo `A1`).
+    + **Destino / Rango**: Celda superior izquierda del rango en la hoja destino donde se copiarán los valores procedentes de la hoja de cálculo de origen (ejemplo `A1`).
     + **Opciones de copia**: Estas casillas de verificación permiten escoger selectivamente qué elementos del rango de origen, además del propio contenido de las celdas, serán copiados. Solo aparecerán en cada fila cuando la celda correspondiente en la columna **ID / URL** deje de estar vacía.
-      + **Formato**: Fuente, tamaño, estilo, colores de texto y fondo, bordes, alineación horizontal y vertical, rotación, ajuste de texto, formato de número, combinaciones de celdas, formato condicional, colores alternos e incluso texto enriquecido (celdas con distintos atributos en diferentes partes del texto que contienen).
+      + **Formato**: Fuente, tamaño, estilo, colores de texto y fondo, bordes, alineación horizontal y vertical, rotación, ajuste de texto, formato de número, combinaciones de celdas, formato condicional, colores alternos e incluso texto enriquecido (celdas con distintos atributos en diferentes partes del texto).
       + **Fórmulas**: Si se activa, copia las fórmulas tal cual en lugar del resultado de su evaluación en la hoja de origen.
       + **Anchura**: Ancho de columnas.
       + **Altura**: Alto de filas.
       + **Notas**: Notas insertadas en las celdas.
-1. Asegúrate de marcar la casilla de verificación en la columna `Activar` para que el trabajo de importación sea procesado.
+1. Asegúrate de marcar la casilla de verificación en la columna `Activar` para que el trabajo de importación quede marcado como activo y sea procesado.
 1. Utiliza los comandos del menú `🔄 Importador+` para **importar** (recibir datos de las HdC origen) o **exportar** (empujar datos desde la plantilla a sus HdC originales).
-1. Las columnas L y M se actualizan tras cada ejecución de los trabajos programados.
-    + **Con éxito**: Muestra la fecha y hora de la última ejecución correcta de cada trabajo de importación. Un color de fondo rojo indica que la última ejecución ha fallado, pero el sello de tiempo seguirá mostrando el momento de la última ejecución con éxito como evidencia de la *frescura* de los datos en la hoja de cálculo.
-    + **Registro última ejecución**: En el caso de una ejecución fallida, aquí podrás revisar el mensaje de error correspondiente que quizás te ayude a diagnosticar el problema.
+1. Las **columnas L y M** se actualizan tras cada ejecución de los trabajos programados.
+    + **Con éxito**: Muestra la fecha y hora de la última ejecución correcta de cada trabajo de importación. Un color de fondo rojo señaliza que la última ejecución ha fallado, pero el sello de tiempo seguirá mostrando el momento de la última ejecución con éxito como evidencia de la *frescura* de los datos visibles en la hoja de cálculo.
+    + **Registro última ejecución**: En el caso de una ejecución fallida, aquí podrás revisar el mensaje de error correspondiente, que quizás te ayudará a diagnosticar el problema.
 
-Puedes hacerte una copia de esta [plantilla](https://docs.google.com/spreadsheets/d/1AReLiyOuTEXLkWCFhJE3nnSC-P2KvMMODYFI1weeKT0/template/preview), que ya incluye dos trabajos predefinidos, para jugar con ella y hacerte una idea mejor de su funcionamiento.
+Puedes obtener una copia de esta [plantilla](https://docs.google.com/spreadsheets/d/1AReLiyOuTEXLkWCFhJE3nnSC-P2KvMMODYFI1weeKT0/template/preview), que ya incluye dos trabajos predefinidos, para jugar con ella y hacerte una mejor idea de su funcionamiento.
 
 ![Importador++ - plantilla - Hojas de cálculo de Google - Google Chrome_999(001)](https://user-images.githubusercontent.com/12829262/71700313-f0337c00-2dc3-11ea-83ef-f68e19dba69e.png)
 
 # Programando los trabajos
 
-La ejecución de los trabajos de importación o exportación de datos es manual, aunque puede programarse fácilmente gracias a los *activadores por tiempo* que nos ofrece el editor de Google Apps Script. Estos activadores permiten desencadenar procesos de consolidación o actualización de datos a intervalos regulares, por ejemplo diarios. Veamos cómo:
+La ejecución de los trabajos de importación o exportación de datos es manual, aunque puede programarse fácilmente gracias a los *activadores por tiempo* que nos ofrece el editor de Google Apps Script. Estos activadores permiten desencadenar procesos de consolidación o actualización de datos a intervalos regulares, por ejemplo a una hora concreta cada día. Veamos cómo:
 
 1. Abre la hoja de cálculo de **Importador++**.
 1. Menú `Herramientas` :arrow_right: `Editor de secuencia de comandos`.
@@ -63,7 +63,7 @@ Puedes crear varios activadores, asociados a los procesos de importación y expo
 
 ![Selección_999(139)](https://user-images.githubusercontent.com/12829262/71700824-4f928b80-2dc6-11ea-986a-dff34e3452c8.png)
 
-> ¿Te animas a mejorar **Importador++** y dotarlo de una pequeña interfaz de usuario para facilitar la gestión de activadores :muscle:? El código fuente, bajo licencia GNU GPL v3, es todo tuyo.
+> ¿Te animas a mejorar **Importador++** :muscle: y dotarlo de una pequeña interfaz de usuario para facilitar la gestión de activadores? El código fuente, bajo licencia GNU GPL v3, es todo tuyo. 
 
 # Algunas consideraciones
 
@@ -73,7 +73,7 @@ Cosas que debes tener en cuenta:
 + El usuario que ejecuta manualmente la importación / exportación (o crea un activador) debe tener los permisos de acceso necesarios sobre las hojas de cálculo de las que se obtienen (lectura) / hacia las que se empujan (edición) datos.
 + Si utilizas rangos de datos muy grandes es posible que el proceso de importación / exportación se demore bastante si se activan las opciones de ajustar el tamaño de filas y columnas.
 + Hablando de filas y columnas, sus tamaños solo se aplican en el rango destino cuando en el de origen se han modificado los valores por defecto. Por otro lado, dado que los trabajos se procesan secuencialmente, es posible que se produzcan interferencias si los rangos respectivos comparten filas o columnas.
-+ El formato de texto enriquecido intra-celda solo se copia cuando se seleccionan simultaneamente y al menos las opciones de propagación de *formato* y *fórmulas*. Esto es debido a una cuestión técnica un tanto rebuscada relacionada con la API de hojas de cálculo que por el momento no he sido capaz de resolver de modo totalmente satisfactorio. Quizás un día de estos me anime a contarlo...
++ El formato de texto enriquecido intra-celda solo se copia cuando se seleccionan simultaneamente al menos las opciones de propagación de *formato* y *fórmulas*. Esto es debido a una cuestión técnica un tanto rebuscada relacionada con la API de hojas de cálculo que por el momento no he sido capaz de resolver de modo totalmente satisfactorio. Quizás un día de estos me anime a contarlo...
 
 # Licencia
 
