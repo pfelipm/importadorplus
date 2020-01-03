@@ -45,8 +45,8 @@ Puedes hacerte una copia de esta [plantilla](https://docs.google.com/spreadsheet
 
 La ejecución de los trabajos de importación o exportación de datos es manual, aunque puede programarse fácilmente gracias a los activadores por tiempo que nos ofrece el editor de Google Apps Script. Veamos cómo:
 
-1. `Herramientas` > `Editor de secuencia de comandos`.
-1. `Editar` > `Activadores del proyecto activo`.
+1. `Herramientas` :arrow_right: `Editor de secuencia de comandos`.
+1. `Editar` :arrow_right: `Activadores del proyecto activo`.
 1. Clic en `+Añadir activador`.
 1. Selecciona que función ejecutar: `importar` o `exportar`.
 1. Selecciona la fuente del evento: `Según tiempo`.
