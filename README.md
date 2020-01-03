@@ -43,10 +43,11 @@ Puedes hacerte una copia de esta [plantilla](https://docs.google.com/spreadsheet
 
 # Programando los trabajos
 
-La ejecución de los trabajos de importación o exportación de datos es manual, aunque puede programarse fácilmente gracias a los activadores por tiempo que nos ofrece el editor de Google Apps Script. Veamos cómo:
+La ejecución de los trabajos de importación o exportación de datos es manual, aunque puede programarse fácilmente gracias a los *activadores por tiempo* que nos ofrece el editor de Google Apps Script. Veamos cómo:
 
-1. `Herramientas` :arrow_right: `Editor de secuencia de comandos`.
-1. `Editar` :arrow_right: `Activadores del proyecto activo`.
+1. Abre la hoja de cálculo de **Importador++**.
+1. Menú `Herramientas` :arrow_right: `Editor de secuencia de comandos`.
+1. Menú `Editar` :arrow_right: `Activadores del proyecto activo`.
 1. Clic en `+Añadir activador`.
 1. Selecciona que función ejecutar: `importar` o `exportar`.
 1. Selecciona la fuente del evento: `Según tiempo`.
@@ -60,7 +61,7 @@ Puedes crear varios activadores, asociados a los procesos de importación y expo
 
 ![Selección_999(139)](https://user-images.githubusercontent.com/12829262/71700824-4f928b80-2dc6-11ea-986a-dff34e3452c8.png)
 
-¿Te animas a construir una pequeña interfaz de usuario para facilitar la programación de activadores? :muscle:
+¿Te animas a mejorar **Importador++** y dotarle de una pequeña interfaz de usuario para facilitar la gestión de activadores :muscle:? El código fuente, bajo licencia GNU GPL v3, es todo tuyo.
 
 # Algunas consideraciones
 
