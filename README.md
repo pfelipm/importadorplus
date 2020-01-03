@@ -62,6 +62,7 @@ Puedes crear varios activadores, asociados a los procesos de importación y expo
 ![Selección_999(139)](https://user-images.githubusercontent.com/12829262/71700824-4f928b80-2dc6-11ea-986a-dff34e3452c8.png)
 
 > ¿Te animas a mejorar **Importador++** y dotarlo de una pequeña interfaz de usuario para facilitar la gestión de activadores :muscle:?
+>
 > El código fuente, bajo licencia GNU GPL v3, es todo tuyo.
 
 # Algunas consideraciones
