@@ -2,7 +2,7 @@
 
 ![Importador+ test 1](https://user-images.githubusercontent.com/12829262/71702547-57572d80-2dd0-11ea-9718-d74bc4ba6bb9.gif)
 
-**Importador++** es la modesta evolución de un pequeño script GAS creado a modo de ejemplo didáctico de uso de la API de hojas de cálculo de Google en el contexto del bloque de *Gestión Digital Eficaz* que impartí en octubre de 2019 dentro del [Programa TIE](https://u-teach.co/tie) de Weforteachers. Se trata de una sencilla plantilla que permite consolidar información dispersa en distintas hojas de cálculo de Google.
+**Importador++** es la modesta evolución de un pequeño script GAS creado a modo de ejemplo didáctico de uso de la API de hojas de cálculo de Google en el contexto del bloque de *Gestión Digital Eficaz* que impartí en octubre de 2019 dentro del [Programa TIE](https://u-teach.co/tie) de Uteach (ahora Weforteachers). Se trata de una sencilla plantilla que permite consolidar información dispersa en distintas hojas de cálculo de Google.
 
 Probablemente estarás pensando en que para hacer algo parecido ya existe la función integrada `=IMPORTRANGE(URL; Rango)`. Y tendrás razón. No obstante, `IMPORTRANGE` presenta algunas particularidades:
 
