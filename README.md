@@ -28,7 +28,7 @@ Probablemente estarás pensando en que para hacer algo parecido ya existe la fun
     + **Destino / Hoja**: Nombre de la hoja, siemppre dentro de la HdC de **Importador++**, donde se depositarán los datos importados (ejemplo `Hoja 1`).
     + **Destino / Rango**: Celda superior izquierda del rango en la hoja destino donde se copiarán los valores procedentes de la hoja de cálculo de origen (ejemplo `A1`).
     + **Opciones de copia**: Estas casillas de verificación permiten escoger selectivamente qué elementos del rango de origen, además del propio contenido de las celdas, serán copiados. Solo aparecerán en cada fila cuando la celda correspondiente en la columna **ID / URL** deje de estar vacía.
-      + **Formato**: Fuente, tamaño, estilo, colores de texto y fondo, bordes, alineación horizontal y vertical, rotación, ajuste de texto, formato de número, combinaciones de celdas, formato condicional, colores alternos e incluso texto enriquecido (celdas con distintos atributos en diferentes partes del texto).
+      + **Formato**: Fuente, tamaño, estilo, colores de texto y fondo, bordes, alineación horizontal y vertical, rotación, ajuste de texto, formato de número, combinaciones de celdas, formato condicional, validación, colores alternos e incluso texto enriquecido (celdas con distintos atributos en diferentes partes del texto).
       + **Fórmulas**: Si se activa, copia las fórmulas tal cual en lugar del resultado de su evaluación en la hoja de origen.
       + **Anchura**: Ancho de columnas.
       + **Altura**: Alto de filas.
