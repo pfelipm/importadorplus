@@ -99,7 +99,7 @@ function procesar(modo) {
   var filaInicialRangoOrigen, nFilas, nColumnas;
   var hojaTemporal;
   var activadoB, ID, hojaOrigenT, rangoOrigenT, hojaDestinoT, rangoDestinoT, formatoB, formulasB, anchuraB, alturaB, notasB;
-  var filaTrabajo
+  var filaTrabajo;
   var rangoImportar;
   
   // Rangos auxiliares de idénticas dimensiones
