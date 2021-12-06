@@ -1,5 +1,4 @@
-![Creado con - Google Apps Script](https://img.shields.io/static/v1?label=Creado+con&message=Google+Apps+Script&color=blue&style=for-the-badge&logo=GAS)
-# ¿Qué es Importador++?
+[![Created with - Google Apps Script](https://img.shields.io/static/v1?label=Created+with&message=Google+Apps+Script&color=blue)](https://developers.google.com/apps-script)# ¿Qué es Importador++?
 
 ![Importador+ test 1](https://user-images.githubusercontent.com/12829262/71702547-57572d80-2dd0-11ea-9718-d74bc4ba6bb9.gif)
 
