@@ -75,7 +75,7 @@ Cosas que debes tener en cuenta:
 *   El usuario que ejecuta manualmente la importación / exportación (o crea un activador) debe tener los permisos de acceso necesarios sobre las hojas de cálculo de las que se obtienen (lectura) / hacia las que se empujan (edición) datos.
 *   Si utilizas rangos de datos muy grandes es posible que el proceso de importación / exportación se demore bastante si se activan las opciones de ajustar el tamaño de filas y columnas.
 *   Hablando de filas y columnas, sus tamaños solo se aplican en el rango destino cuando en el de origen se han modificado los valores por defecto. Por otro lado, dado que los trabajos se procesan secuencialmente, es posible que se produzcan interferencias si los rangos respectivos comparten filas o columnas.
-*   El formato de texto enriquecido intra-celda solo se copia cuando se seleccionan simultaneamente al menos las opciones de propagación de _formato_ y _fórmulas_. Esto es debido a una cuestión técnica un tanto rebuscada relacionada con la API de hojas de cálculo que por el momento no he sido capaz de resolver de modo totalmente satisfactorio. Quizás un día de estos me anime a contarlo...
+*   El formato de texto enriquecido intra-celda solo se copia cuando se seleccionan simultaneamente al menos las opciones de propagación de _formato_ y _fórmulas_. Esto es debido a una cuestión técnica un tanto rebuscada relacionada con el servicio Apps Script de hojas de cálculo que por el momento no he sido capaz de resolver de modo totalmente satisfactorio. Quizás un día de estos me anime a contarlo...
 
 # Licencia
 
